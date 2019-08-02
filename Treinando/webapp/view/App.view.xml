@@ -1,0 +1,22 @@
+<mvc:View
+	xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+	controllerName="treinando.controller.App"
+	>
+    <Panel HeaderText="{ki18n>PanelHeaderText}" class="sapUiSmallMargin" width="auto">
+        <content>
+			<l:VerticalLayout
+				class="sapUiContentPadding"
+				width="100%">
+				<l:content>
+					<Button
+						text="Dialog"
+						width="230px"
+						press="onDialogPress"
+						class="sapUiSmallMarginBottom" />
+				</l:content>
+			</l:VerticalLayout>
+        </content>
+    </Panel>  
+</mvc:View>

@@ -1,0 +1,14 @@
+{
+    "marcos" : {
+        "nome": "Marcos",
+        "id":1,
+        "idade":21,
+        "curso":"Sistemas de Informação"
+    },
+    "Adriano":{
+        "nome": "Adriano",
+        "id":2,
+        "idade":22,
+        "curso":"Ciência da Informação"
+    }
+}

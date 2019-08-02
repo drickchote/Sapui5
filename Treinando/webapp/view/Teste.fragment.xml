@@ -1,0 +1,91 @@
+<core:FragmentDefinition
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+    >
+	<Table items="{tabela>/}" mode="SingleSelectMaster">
+        <headerToolbar>
+            <OverflowToolbar>
+                <content>
+                    <Title text="{i18n>table_NomeProduto}" level="H2"/>
+                    <ToolbarSpacer />
+                    <!-- <ComboBox id="idPopinLayout"
+                        placeholder="Popin layout options"
+                        change="onPopinLayoutChanged">
+                        <items>
+                            <core:Item  text="{Combobox>nome}"
+                                key="{Combobox>id}"/>
+                        </items>
+                    </ComboBox> -->
+                    <!-- <MultiComboBox id="idSticky"
+                        placeholder="Sticky options"
+                        selectionFinish="onSelectionFinish"
+                        width="15%"
+                        
+                        >
+                        <layoutData>
+                            <ToolbarLayoutData minWidth="4rem"/>
+                        </layoutData>
+                        <items>
+                            <core:Item  text="{Combobox>nome}"
+                                key="{Combobox>id}"/>
+                            <core:Item  text="{Combobox>nome}"
+                                key="{Combobox>id}"/>
+                            <core:Item  text="{Combobox>nome}"
+                                key="{Combobox>id}"/>
+                        </items>
+                    </MultiComboBox> -->
+                    <ToggleButton id="toggleInfoToolbar"
+                        text="Hide/Show InfoToolbar"
+                        press="onToggleInfoToolbar" />
+                </content>
+            </OverflowToolbar>
+        </headerToolbar>
+        <infoToolbar>
+            <Toolbar active="ture">
+                <Label text="Todos os alunos do curso"/>
+            </Toolbar>
+        </infoToolbar>
+        <columns>
+            <Column
+                width="12em">
+                <Text text="Id" />
+            </Column>
+            <Column
+                minScreenWidth="Tablet"
+                demandPopin="true">
+                <Text text="Nome" />
+            </Column>
+            <Column
+                minScreenWidth="Desktop"
+                demandPopin="true"
+                hAlign="End">
+                <Text text="Idade" />
+            </Column>
+                <Column
+                minScreenWidth="Desktop"
+                demandPopin="true"
+                hAlign="End">
+                <Text text="Curso"/>
+            </Column>
+            
+        </columns>
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <ObjectIdentifier
+                        title="{tabela>id}"
+                        />
+                    <Text
+                        text="{tabela>nome}" />
+                    <Text
+                        text="{tabela>idade}" />
+                    <Text
+                        text="{tabela>curso}"/>
+                </cells>                
+            </ColumnListItem>
+            
+        </items>
+    </Table>
+</core:FragmentDefinition>
